@@ -7,6 +7,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
+import { HomePage } from '../home/home';
+import { RegisPage } from '../regis/regis';
+import { ForgetpassPage } from '../forgetpass/forgetpass';
 
 @IonicPage()
 @Component({
@@ -20,6 +23,16 @@ export class LoginPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+  }
+
+   loginButton() {
+    this.navCtrl.push(HomePage);
+  }
+   regisButton() {
+    this.navCtrl.push(RegisPage);
+  }
+   forgetpssButton() {
+    this.navCtrl.push(ForgetpassPage);
   }
 
 }

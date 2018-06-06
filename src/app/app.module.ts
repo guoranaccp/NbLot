@@ -21,9 +21,12 @@ import { CarPage } from '../pages/car/car';
 import { StartPage } from '../pages/start/start';
 import { LoginPage } from '../pages/login/login';
 
+import { RegisPage } from '../pages/regis/regis';
+import { ForgetpassPage } from '../pages/forgetpass/forgetpass';
+
 
 @NgModule({
-  declarations: [
+  declarations: [/*申明组件*/
     MyApp,
     HomePage,
     TabsPage,
@@ -33,8 +36,10 @@ import { LoginPage } from '../pages/login/login';
     CarPage,
     StartPage,
     LoginPage,
-    NewsPage,   /*申明组件*/
-    NewsinfoPage
+    NewsPage,   
+    NewsinfoPage,
+    RegisPage,
+    ForgetpassPage
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,7 @@ import { LoginPage } from '../pages/login/login';
     })
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
+  entryComponents: [/*申明组件*/
     MyApp,
     HomePage,
     TabsPage,
@@ -56,8 +61,10 @@ import { LoginPage } from '../pages/login/login';
     CarPage,
     StartPage,
     LoginPage ,
-    NewsPage,   /*申明组件*/
-    NewsinfoPage
+    NewsPage,   
+    NewsinfoPage,
+    RegisPage,
+    ForgetpassPage
   ],
   providers: [
     StatusBar,

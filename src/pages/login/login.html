@@ -7,11 +7,31 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>login</ion-title>
+    <ion-title>登陆</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
-
+  <ion-list>
+      <ion-item>
+        <ion-label color="primary">手机号/昵称</ion-label>
+        <ion-input placeholder="Text Input"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary">密码</ion-label>
+        <ion-input placeholder="Text Input"></ion-input>
+      </ion-item>
+      <button ion-button round (click)='loginButton()'>登陆</button>
+      
+      <button  ion-button icon-start  (click)='forgetpssButton()' >
+        <ion-icon name="star"></ion-icon>
+        忘记密码
+      </button>
+      
+      <button ion-button icon-end (click)='regisButton()' >
+        新用户注册
+        <ion-icon name="star"></ion-icon>
+      </button>
+    </ion-list>
 </ion-content>
